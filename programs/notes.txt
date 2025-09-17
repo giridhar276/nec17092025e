@@ -1,0 +1,170 @@
+
+C - datatypes
+---
+int a = 10;
+float  b= 343;
+char
+double
+long
+short
+
+Everything in python is object.
+Every object contains methods
+
+python - objects
+------------------
+
+number
+
+a = 10
+aval = 34.3
+
+
+string
+-------
+string is defined in single or double or triple quotes.
+string is immutable
+aname = 'python programming'
+bname = "java programming"
+cname = """unix shell scripting"""
+
+
+
+list ( array in C)
+-----
+list contains set of elements.
+Elements can be numbers or strings or any combination.
+list is defined in []
+s
+alist = [10,45,30,50,3]
+blist = ["python","unix","oracle"]
+clist = [20,"unix",[10,2030]]
+
+tuple ( immutable uneditable unchangeable)
+------
+tuple contains set of elements.
+Elements can be numbers or strings or any combination.
+tuple is defined in ().
+*** Elements inside tuple cannot be modified directly ***
+
+atup = (30,40,50)
+btup = ("java","oracle")
+
+# list of lists
+empdb = [["ram",20,"US"],["rita",24,"UK"]]
+# list of tuples
+empdb = [("ram",20,"US"),("rita",24,"UK")]
+
+
+
+dictionary  ( json  hashmap  hash  associativearray  mapping item)
+-------------
+dictionary contains eelements in key value pairs
+dictionary is defined in {}.
+in dictionary.. keys are unique and it would be number or string
+                values can be number or string or list or tuple or dict
+
+
+
+
+syntax:  object = { key:value , key:value , key:value}
+example:   book = {"chap1":10 ,"chap2":20 ,"chap3":30}
+
+
+example:
+   Index
+   -----
+chap1   10
+chap2   20
+chap3   30
+chap4   40
+chap5   40 
+
+
+
+
+set ( venn diagrams)
+-----
+set is UNORDERED collection of UNIQUE elements of SAME type.
+
+aset = {10,10,10,20,30,30,30}
+
+
+
+conditions
+------------
+if condition
+if-else 
+if-elif-elif-elif-elif-else 
+
+
+control statements
+-----------------
+for 
+while 
+
+
+
+level1
+level1
+level1
+level1
+if cond:
+    level2
+    level2
+    level2
+    if cond:
+        level3
+        level3
+        level3
+level1
+level1
+
+
+comments in python
+----------------
+# singe line comment 
+
+'''
+this 
+is 
+multiline
+comment
+'''
+
+"""
+this
+is
+multiline comment 
+"""
+
+
+
+
+requirement =    core programming     + libraries    +  domain
+                 ( procedural or oop)
+
+
+
+when python is installed in your system.. 
+python gets installed with 3k that are generally used
+
+builtin libraries : C:\Python313\Lib
+
+third party libraries: C:\Python313\Lib\site-packages
+
+
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+#include<string.h>
+#include<graphics.h>
+
+
+
+for ( i = 1 ; i < 10 ;i++)
+{
+    printf()
+}
+
+
