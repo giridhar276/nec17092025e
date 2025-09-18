@@ -1,0 +1,11 @@
+employee_id,name,department,role,location
+E001,Aarav Kumar,Engineering,Data Scientist,Bengaluru
+E002,Diya Sharma,Engineering,Backend Developer,Hyderabad
+E003,Rohan Iyer,Finance,Financial Analyst,Mumbai
+E004,Ishita Mehta,HR,HR Business Partner,Pune
+E005,Vikram Singh,Sales,Account Manager,Delhi
+E006,Neha Gupta,Marketing,Content Strategist,Gurugram
+E007,Arjun Reddy,Support,Support Engineer,Hyderabad
+E008,Priya Nair,Operations,Ops Specialist,Chennai
+E009,Sanjay Rao,Engineering,DevOps Engineer,Bengaluru
+E010,Kiran Joshi,Product,Product Manager,Pune

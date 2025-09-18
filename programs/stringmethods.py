@@ -1,20 +1,26 @@
 
 name = "python programming"
-#name[0]="z"
-#name[start:stop:step]
+
+
+#p   y   t    h    o    n      p  r   o   g   r    a     m    m  i   n    g
+#0   1   2    3    4    5  6   7   8  9  10   11   12   13   14  15  16   17 
+#                                                                -3  -2   -1
+#slicing
+#string[start:stop:step]
+print(name)
 print(name[0])
 print(name[1])
-print(name[2:9])
-print(name[7:9])
+print(name[0:5])
+print(name[8:13])
 print(name[0:18])
 print(name[0:18:1])
-print(name[:])
-print(name[::])
-print(name[0:18:2]) #pto rgamn
-print(name[0:18:3])
+print(name[::])  # name[0:18:1]
+print(name[:])   # name[0:18]
+print(name[0:18:2]) #pto po
+print(name[1:18:2])
 print(name[-1])
 print(name[-2])
-print(name[-5:-2])
+print(name[-6:-1:-1])
 print(name[::-1])
 
 
@@ -22,117 +28,113 @@ print(name[::-1])
 name = "python programming"
 print(name.capitalize())
 print(name.title())
-print(name.upper())
-print(name.lower())
-print(name.isupper())
-print(name)
-print(name.islower())
-print(name.split(" "))
 print(name.center(40))
-print(name.center(40,"*"))
-print(name.replace("python","ruby"))
-print(name.find("in")) # returns index if substring found
-print(name.find("abc"))# -1 if not found
 
-aname  = "  python "
-print(len(aname))
-print(len(aname.strip())) # remove whitespaces at both ends
-print(len(aname.lstrip()))# 7
-print(len(aname.rstrip()))#8
-bname = "I love {} and {}" # template
-print(bname.format("Noida","Hyderabad"))
-print(bname.format("python","unix"))
-
+print(name.center(0,"*"))
 print(name.count("p"))
-print(name.count("ram"))
-print(name.startswith("p"))
+print(name.endswith("p"))
+print(name.startswith("q"))
 print(name.endswith("g"))
-print(name.replace("python","spark"))
-print(name.encode('utf-16'))
+print(name.endswith("w"))
+print(name.find("in")) # if substirng is existing.. will return the starting index of i
+print(name.find("abc"))# if not found... will return -1
+
+aname = "I love {} and {}"  # template
+print(aname.format("Noida","Hyderbad"))
+
+print(name.isalnum())
+print(name.isalpha())
+print(name.isupper())
+print(name.islower())
 
 
-#simple if condition
+print(name.split(" ")) # string to list
+bname = "    python  "
+print(len(bname))
+print(len(bname.strip()))
+print(len(bname.lstrip()))
+print(len(bname.rstrip()))
+
+alist = ["python","programming"] #list
+print(" ".join(alist))   # list to string
+
+cname = "PYnToN"
+print(cname.swapcase())
+
+name = "python"
+print(name.encode("utf-16"))
+print(name.encode("utf-32"))
+
+val = 10
+print(oct(val))
+print(hex(val))
+
+
+name  = "python programming"
+print(name.isalpha())
+print(name.isalnum())
+
+# if condition
+if name.islower() :
+    print("string is lowr")
+    print("inside if ")
+    print("still inside if ")
+
+
 if name.startswith("p"):
     print("its python")
     print("inside if")
-    print("still inside if")
 
-if name.islower():
-    print("string is lower")
 
-if name == "python programming":
-    print("python")
-
-if 1 < 2:
-    print("true")
-
-# if-else
-if name.islower():
-    print("string is lower")
-    print("inside if")
-    print("still inside if")
+#if-else
+if name.islower() :
+    print("string is lowr")
+    
 else:
     print("string is upper")
-    print("inside else")
 
-#if-elif-elif-elif-elif-else
-name = input("Enter any language:")
-if name == "python":
-    print("python")
-elif name == "java":
-    print("java")
-elif name == "unix":
-    print("unix")
-elif name == "spark":
-    print("spark")
+
+#if-elif-elif-elif-else
+lang = input("Enter any language:")
+if lang == "python":
+    print("its python")
+elif lang == "java":
+    print("its java")
+elif lang == "oracle":
+    print("its oracle")
 else:
     print("its someother language")
 
-# check for existence of substring in main string
-name = "python"
-print(name.find("th")) #2
-print(name.find("abc")) # -1
 
-if name.find("th") != -1:
-    print("substring found")
-
-if 'th' in name:
-    print("substring found")
+#if-elif-elif-elif-else
+lang = input("Enter any language:")
+if lang == "python":
+    print("its python")
 else:
-    print("not found")
-
-# stringt concatenation
-first = "python"
-second = "programming"
-final = first + " " + second
-print(final)
-
-#string repetition
-print(first * 3)
-
-alist = [10,20,30]
-blist = [30,40,50]
-finalist = alist + blist
-print(finalist)
-print(alist * 4)
+    if lang == "java":
+        print("its java")
+    elif lang == "oracle":
+        print("its oracle")
+    else:
+        print("its someother language")
 
 
-# range(start,stop,step)
+# range(start,stop,incremental)
 for i in range(1,11):
     print(i)
+##  displays numbers from 1 to 10
+for i in range(1,11,1):
+    print(i)
+# display all even numbers
+for i in range(2,10,2):
+    print(i)
+# display odd numbers
+for i in range(1,10,2):
+    print(i)
+# display in reverse order
+for i in range(10,1,-1):
+    print(i)
 
-print("reversing numbers")
-for val in range(10,0,-1):
-    print(val)
-
-print("even numbers")
-for i in range(2,11,2):
-    print(i) 
-
-name  = "python"
+name = 'python'
 for char in name:
     print(char)
-
-alist = [10,20,"python"]
-for val in alist:
-    print(val)

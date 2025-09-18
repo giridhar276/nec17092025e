@@ -168,3 +168,102 @@ for ( i = 1 ; i < 10 ;i++)
 }
 
 
+file handling
+--------------
+txt 
+xlsx
+csv
+conf 
+log 
+json
+yaml
+docx
+pptx
+mp3
+mp4
+dat 
+mkv 
+log 
+.env 
+jpg 
+gif 
+rar 
+zip 
+7z 
+mpeg 
+
+
+flat files  ( txt csv  json  yaml  log conf xml )
+----------
+
+
+working with flat files 
+--------------------------
+
+read mode  r 
+write mode  w
+append mode a
+
+opening the file 
+----------------
+syntax:   object = open(filename,mode)
+example:    fr  =  open("customers.txt","r")  # read mode 
+
+            fw  =  open("customers.txt","w")   # write mode 
+            # if the file is not found.... file will be created first 
+            # if the file is existing .... it overwrites the existing content
+
+            fa  =  open("customers.txt","a")   # append mode
+            # if the file is not found.... file will be created first 
+            # if the file is existing .... it adds  the new content to existing content
+
+
+
+file read operation 
+----------------------
+1. reading the file line by line 
+2. using fobj.readlines()
+3. using fobj.read()
+4. using csv library 
+5. using pandas library
+
+
+file write operation 
+----------------------
+1. fobj.write()
+2. fobj.writeslines()
+3. using pandas library
+
+
+
+closing the file 
+-----------------
+fr.close()
+
+
+
+
+
+
+
+
+There are 2 types of errors
+
+1. syntax error 
+2. semantic error or runtime error or logical error 
+
+Handling errors that occurs during runtime is known as exception handling.
+
+
+try
+except
+
+
+
+
+
+
+
+
+
+
